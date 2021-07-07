@@ -5,7 +5,38 @@ import { v4 as uuid } from 'uuid';
 
 @Injectable()
 export class TasksService {
-  private tasks: Task[] = [];
+  private tasks: Task[] = [
+    {
+      id: uuid(),
+      title: 'testing 1',
+      description: 'Testing description',
+      status: TaskStatus.OPEN,
+    },
+    {
+      id: uuid(),
+      title: 'testing 2',
+      description: 'Testing description',
+      status: TaskStatus.OPEN,
+    },
+    {
+      id: uuid(),
+      title: 'testing 3',
+      description: 'Testing description',
+      status: TaskStatus.OPEN,
+    },
+    {
+      id: uuid(),
+      title: 'testing 4',
+      description: 'Testing description',
+      status: TaskStatus.OPEN,
+    },
+    {
+      id: uuid(),
+      title: 'testing 5',
+      description: 'Testing description',
+      status: TaskStatus.OPEN,
+    },
+  ];
 
   getAllTasks(): Task[] {
     return this.tasks;
