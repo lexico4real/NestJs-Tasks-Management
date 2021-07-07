@@ -41,6 +41,11 @@ export class TasksService {
   getAllTasks(): Task[] {
     return this.tasks;
   }
+
+  getOne(id: string): Task {
+    return this.tasks.find(task => task.id === id);
+  }
+
   createTask(title: string, description: string): Task {
     const task: Task = {
       id: uuid(),
