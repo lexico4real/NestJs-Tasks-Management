@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { Delete, Param, Patch, Query } from '@nestjs/common';
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { CreateTaskDto } from './dto/create-task.dto';
