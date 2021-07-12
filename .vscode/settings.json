@@ -1,7 +1,3 @@
 {
-    "cSpell.words": [
-        "nestjs",
-        "postgres",
-        "typeorm"
-    ]
+  "cSpell.words": ["nestjs", "postgres", "signup", "typeorm"]
 }
